@@ -8,9 +8,8 @@ export default class Login extends Component{
 	}
     render(){
         return(
-            <Content style={{backgroundColor: '#98d2c1'}}>
             <View style={styles.container}>
-         
+                
                 <View style={styles.logo} >
                     <View style={styles.profileImage}>
                         <Image source={require('../assets/img/logo.png')}  style={{width: 200, height: 100}}/>
@@ -36,7 +35,7 @@ export default class Login extends Component{
                     </View>
                     <View style={styles.loginInner} >
                         <View style={styles.loginItem} >
-                            <Button full info style={{borderRadius: 50,marginTop: 10}} onPress={this.login}>
+                            <Button full info style={{borderRadius: 50}} onPress={this.login}>
                                 <Text>Login</Text>
                             </Button>
                         </View>
@@ -44,7 +43,6 @@ export default class Login extends Component{
                 </View>
 
             </View>
-            </Content>
         );
     }
 }
@@ -52,19 +50,16 @@ export default class Login extends Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // backgroundColor: '#98d2c1',
-        // height: '100%'
+        backgroundColor: '#98d2c1',
     },
     logo: {
-        height: '100%',
-        // height: '50%',
+        height: '50%',
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 30,
     },
     login: {
-        height: '100%',
-        // height: '40%',
+        height: '40%',
         flexDirection: 'column',
         flexWrap: 'wrap',
         alignItems: 'center',
@@ -73,7 +68,7 @@ const styles = StyleSheet.create({
     },
     loginInner: {
         width: '80%',
-        // height: '25%',
+        height: '25%',
         padding: 5,
         
     },
