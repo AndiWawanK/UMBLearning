@@ -3,7 +3,7 @@ import {
     View,
     StyleSheet
 } from 'react-native';
-import { Container, Header, Text, Left, Body, Right, Button, Icon, Title, StyleProvider } from 'native-base';
+import { Container, Content, Card, ListItem, Header, Text, Left, Body, Right, Button, Icon, Title, StyleProvider } from 'native-base';
 import getTheme from '../../native-base-theme/components';
 import commonColor from '../../native-base-theme/variables/commonColor';
 export default class JadwalUjian extends Component{
@@ -33,18 +33,38 @@ export default class JadwalUjian extends Component{
                     </Right>
                   </Header>
                 </StyleProvider>
-                <View style={styles.container}>
+                {/* <View style={styles.container}>
                     <Text>Jadwal Ujian Screen</Text>
-                </View>
+               
+                </View> */}
+                <Content style={{backgroundColor: '#fff', padding: 5}}>
+                    <Card>
+                      <ListItem itemDivider>
+                          <Text>Jadwal Ujian Semester Genap 2018</Text>
+                      </ListItem>
+                      <ListItem>
+                        <View style={{flex: 1, flexDirection: 'column'}}>
+                          <Body style={{padding: 3}}>
+                            <Text style={{fontWeight: 'bold',padding:3}}>UMB008 Bahasa Indonesia</Text>
+                            <Text style={{fontWeight: 'bold',padding:3}}>Hari : <Text style={{fontWeight: '400'}}>Senin</Text></Text>
+                            <Text style={{fontWeight: 'bold',padding:3}}>Waktu : <Text style={{fontWeight: '400',fontStyle: 'italic'}}>09:50 s.d,	11:30</Text></Text>
+                            <Text style={{padding:3}}><Text style={{fontWeight:'bold'}}>Ruang : </Text> D-306-308	</Text>
+                            {/* <Text style={{fontSize: 12,padding:3}}><Text style={{}} */}
+                          </Body>
+                        </View>
+                      </ListItem>
+                      
+                    </Card>
+                </Content>
             </Container>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
+    // container: {
+    //     flex: 1,
+    //     alignItems: 'center',
+    //     justifyContent: 'center'
+    // }
 });
