@@ -3,7 +3,7 @@ import {
     View,
     StyleSheet
 } from 'react-native';
-import { Container, Header, Text, Left, Body, Right, Button, Icon, Title, StyleProvider } from 'native-base';
+import { Container, Header, Text, Content, ListItem, Left, Body, Right, Button, Icon, Title, StyleProvider } from 'native-base';
 import getTheme from '../../native-base-theme/components';
 import commonColor from '../../native-base-theme/variables/commonColor';
 export default class Tagihan extends Component{
@@ -33,9 +33,22 @@ export default class Tagihan extends Component{
                     </Right>
                   </Header>
                 </StyleProvider>
-                <View style={styles.container}>
+                {/* <View style={styles.container}>
                     <Text>Tagihan Screen</Text>
-                </View>
+                </View> */}
+
+                <Content>
+                  <ListItem>
+                    <View style={styles.container}>
+                      <Text style={{fontSize: 18}}> Lihat Tagihan </Text>
+                    </View>
+                  </ListItem>
+                  <ListItem>
+                    <View style={styles.wrap}>
+                      <Text> </Text>
+                    </View>
+                  </ListItem>
+                </Content>
             </Container>
         );
     }
