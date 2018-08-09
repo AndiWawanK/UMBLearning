@@ -43,11 +43,6 @@ export default class Tagihan extends Component{
                       <Text style={{fontSize: 18}}> Lihat Tagihan </Text>
                     </View>
                   </ListItem>
-                  <ListItem>
-                    <View style={styles.wrap}>
-                      <Text> </Text>
-                    </View>
-                  </ListItem>
                 </Content>
             </Container>
         );
